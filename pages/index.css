@@ -130,7 +130,7 @@ margin-left: 10px;
 }
 .play
 {
-  background-image: url('./play.svg');
+  background-image: url('play.svg');
   background-repeat: no-repeat;
   background-position: 60%;
   height: 100%;
