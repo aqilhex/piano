@@ -1,0 +1,187 @@
+:root
+{
+  --firstColor:#7ca4ff;
+  --secondColor:#eceef3;
+  --thirdColor: #7ca4ff0a;
+  --fourthColor:#afb0b5;
+  --fifthColor: rgb(245, 246, 250);
+  --clr-one: rgb(255, 20, 147);
+  --clr-two: rgb(127, 255, 0);
+  --clr-three: rgb(138, 43, 226);
+  --clr-bg: #1d1e22;
+  --clr-note1:#f00;
+  --clr-note2:#FF5B1B;
+  --clr-note3:#0fddff;
+  --clr-note4:#FCFF21;
+  --clr-note5:#026400;
+  --clr-note6:#7100A4;
+  --clr-note7:#FF00A7;
+}
+
+*
+{
+  scrollbar-width:none;scrollbar-color:#000 #ccc;-webkit-touch-callout: none;
+  font-family: 'Roboto','Shabnam', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+a:hover
+{ 
+  text-decoration: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px !important;
+  display: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ccc !important; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000 !important; 
+} 
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000 !important; 
+}
+
+a:focus,li:focus
+{
+  outline: none;
+}
+html,body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#__next, #layout
+{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a
+{
+  text-decoration: none;
+}
+
+input:focus ,button:active		{ outline:none; }
+#TrackerContainer > div
+{
+  position: relative;
+  height: 10px;
+  margin-bottom: 10px;
+  /* border-radius: 2px; */
+  /* transition: 0.5s; */
+  /* transition: height 1s ease-in; */
+  overflow: hidden;
+  box-sizing: border-box;
+  /* background-image: url('https://static.nulled.to/public/assets/sparkling.gif'); */
+}
+button
+{
+-webkit-appearance: none;
+-moz-appearance: none;
+border: none;
+background-color: #0490E7;
+color: white;
+padding: 0;
+cursor: pointer;
+border-radius: 50%;
+width: 60px;
+height: 60px;
+font-size: 24px;
+transition: background-color 0.2s;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+}
+.btn {
+  display: inline-flex;
+  height: 60px;
+  width: auto;
+  margin: 0px 2.5px 0px 2.5px;
+  justify-content: center;
+  align-items: center;
+}
+.btn a
+{
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.play
+{
+  background-image: url('/play.svg');
+  background-repeat: no-repeat;
+  background-position: 60%;
+  height: 100%;
+  width: 100%;
+}
+.pause
+{
+  background: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+}
+/* .tracker[label="c"] {
+  color: var(--clr-note1);
+  border: var(--clr-note1) 0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-note1);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-note1), 0 0 0.5em 0 var(--clr-note1);
+}
+.tracker[label="d"] {
+  color: var(--clr-note2);
+  border: var(--clr-note2) 0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-note2);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-note2), 0 0 0.5em 0 var(--clr-note2);
+}
+.tracker[label="e"] {
+  color: var(--clr-note3);
+  border: var(--clr-note3) 0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-note3);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-note3), 0 0 0.5em 0 var(--clr-note3);
+}
+.tracker[label="f"] {
+  color: var(--clr-note4);
+  border: var(--clr-note4) 0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-note4);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-note4), 0 0 0.5em 0 var(--clr-note4);
+}
+.tracker[label="g"] {
+  color: var(--clr-note5);
+  border: var(--clr-note5) 0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-note5);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-note5), 0 0 0.5em 0 var(--clr-note5);
+}
+.tracker[label="a"] {
+  color: var(--clr-note6);
+  border: var(--clr-note6) 0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-note6);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-note6), 0 0 0.5em 0 var(--clr-note6);
+}
+.tracker[label="b"] {
+  color: var(--clr-note7);
+  border: var(--clr-note7) 0.125em solid;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--clr-note7);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-note7), 0 0 0.5em 0 var(--clr-note7);
+} */
