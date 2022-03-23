@@ -6,7 +6,7 @@ Virtual Piano built with NextJS
 # Usage
 After you clone the app run ```npm install``` then run ```npm run dev```. This will start a localhost at port ```3000```. To get a static HTML build try this command ```npm run build```, There you should see a new folder created with an **out** name. Navigate into it, Edit ```inex.html``` replace (CTRL + H) ```/_next``` with ```./_next```
 
-#Demo
+# Demo
 https://piano-blush.vercel.app/
 
 # Screenshot
